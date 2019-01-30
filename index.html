@@ -2,25 +2,39 @@
 <html>
     <head>
         <title>Google</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!-- Top navigation bar -->
-        <p>About Store || Gmail Images (app_tray) (notification) (avatar)</p>
+        <div class="hpadding" id="headerpad">
+            <p>About Store || Gmail Images (app_tray) (notification) (avatar)</p>
+        </div>
         
         <!-- Google logo -->
-        <img src="googlelogo_color_272x92dp.png" alt="Google">
+        <div class="hpadding" id="logopad">
+            <img src="googlelogo_color_272x92dp.png" alt="Google" id="logo">
+        </div>
+        
+        
         
         <!-- Search bar -->
-        <form action="#" method="GET">
-            <input type="text" name="query" id="search-bar"><br>
-            <input type="button" value="Google Search"> <input type="button" value="I'm Feeling Lucky">
-        </form>
+        <div class="hpadding" id="formpad">
+            <form action="https://www.google.com/search" method="GET">
+                <center>
+                <input type="text" name="q" id="search-bar">
+                <br> <br> <br>
+                <input type="submit" value="Google Search" class="button"> <input type="button" value="I'm Feeling Lucky" class="button">
+                </center>
+            </form>
+        </div>            
 
         <!-- Bottom bar -->
-        <p>Canada</p>
-        <p>Advertising Business || Privacy Terms Settings</p>
+        <div class="hpadding" id="bottompad">
+            <p>Canada</p>
+            <p>Advertising Business || Privacy Terms Settings</p>
+        </div>
     </body>
 </html>
 
